@@ -11,8 +11,6 @@ router.get('/', async (req, res) => {
   res.send({response});
 });
 
-
-  
 const request = async (checkoutId) => {
     var path=`/v1/checkouts/${checkoutId}/payment`;
 	path += '?entityId=8a8294175d602369015d73bf009f1808';
