@@ -7,8 +7,8 @@ router.get('/', async (req, res) => {
         query:{id:checkoutId}
       } = req;
 
-  const response=  await request(checkoutId);
-  res.send({response});
+  const {id}=  await request(checkoutId);
+  res.send({"Transaction Status":"Transaction Completed Successfully !", "Transaction Id":id});
 });
 
 const request = async (checkoutId) => {
